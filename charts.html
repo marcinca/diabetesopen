@@ -183,8 +183,7 @@
     }
 
     function loadData() {
-        //getJSON('http://localhost:8000/ajax_data/3',  function(err, data) {
-        getJSON('http://localhost:8000/ajax_data/3',  function(err, data) {
+        getJSON('https://raw.githubusercontent.com/marcinca/diabetesopen/master/ajax_data',  function(err, data) {
             data = JSON.parse(data);
             data.forEach(myFunction);
         });
